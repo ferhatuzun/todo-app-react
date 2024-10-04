@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+  --white: #fff;
+  --main: #0d0714;
+  --lightPurple: #9e78cf;
+  --green : #78CFB0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  width: 60vw;
+  margin: auto auto;
+  background-color: #1d1825;
+  padding: 5rem 10rem;
+  border-radius: 2rem;
+  margin: 3rem 0;
+}
+
+#taskCreate {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  color: var(--white);
+}
+.taskValue {
+  background-color: transparent;
+  border: 1px solid var(--lightPurple);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  color: var(--white);
+}
+.taskValue:focus {
+  color: var(--white);
+  outline: none;
+}
+.addTaskBtn{
+    background-color: var(--lightPurple);
+    border: none;
+    color: var(--white);
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    padding:0 .8rem;
+    &:hover{
+        cursor:pointer
+    }
+}
+
+/* ??????????????????????? */
+
+.taskListTitle{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main);
+    color: var(--lightPurple);
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+}
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.buttonContainer button{
+    background-color: transparent;
+    border: none;
+    &:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0px 10px var(--lightPurple));
+    }
+}
+.buttonContainer button i{
+    font-size: 2rem;
+    color: var(--lightPurple);
+    
+}
+
+
+
+
+.complatedCard p{
+    color: var(--green);
+    text-decoration: line-through;
+}
